@@ -1,0 +1,19 @@
+# Illuminance
+
+IF Illuminance IS High AND Time of Day IS Daytime THEN i_low
+IF Illuminance IS Low AND Time of Day IS Night or Evening THEN i_high
+IF Illuminance IS Low AND time of day is daytime THEN i_med
+
+
+# Temperature
+
+IF Temperature IS Cold AND Time of Day IS Night THEN t_warm
+IF Temperature IS Warm AND Time of Day IS Daytime THEN t_cold
+IF Temperature IS Comfortable AND Time of Day IS Evening THEN t_Comfort
+
+
+# Air quality index(AQI)
+
+IF AQI IS High THEN APS_power_high
+IF AQI IS Low THEN APS_power_low
+IF AQI IS Medium THEN APS_power_normal
